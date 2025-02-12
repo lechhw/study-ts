@@ -1,15 +1,16 @@
 {
-  // 컴파일 결과 생성되는 자바스크립트 코드의 버전 설정
-  "compilerOptions": {
-    "target": "ESNext", // 자바스크립트 최신버전
-    "module": "ESNext", // 모듈 시스템
-    "outDir": "dist" ,// 컴파일 결과 js 파일의 위치
-    "strict": false, // 엄격한 타입검사 여부
+    // 컴파일 결과 생성되는 자바스크립트 코드의 버전 설정
+    "compilerOptions": {
+        "target": "ESNext", // 자바스크립트 최신버전
+        "module": "ESNext", // 모듈 시스템
+        "outDir": "dist", // 컴파일 결과 js 파일의 위치
+        "strict": true, // 엄격한 타입검사 여부
+        // "strictNullChecks": false, // 엄격한 null 검사 (null타입이 아닌 변수에 null 값의 허용 여부)
 
-    // "블록범위 변수 다시 선언x .." 에러 => 파일에 모듈시스템을 사용하는 코드를 추가하면됨. 아래의 설정은 자동으로 모든 ts파일을 개별 모듈로 취급해줌
-    "moduleDetection": "force", 
-    "skipLibCheck": true
-  },
-  // 컴파일할 범위(= 'src'폴더 하위에 있는 모튼 ts 파일을 컴파일 한다)
-  "include": ["src"]
+        // "블록범위 변수 다시 선언x .." 에러 => 파일에 모듈시스템을 사용하는 코드를 추가하면됨. 아래의 설정은 자동으로 모든 ts파일을 개별 모듈로 취급해줌
+        "moduleDetection": "force",
+        "skipLibCheck": true
+    },
+    // 컴파일할 범위(= 'src'폴더 하위에 있는 모튼 ts 파일을 컴파일 한다)
+    "include": ["src"]
 }
